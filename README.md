@@ -15,42 +15,42 @@ FlowBuilder 是一個專門為中小型總包商設計的雲端智慧採購平�
 ```mermaid
 graph TD
 
-A[Sign In]:::high --> B(Dashboard)
-B --> C(Projects)
-C --> C1(Project Detail)
-C1 --> D(Create RFQ)
-D --> E(AI Supplier Suggestions)
-E --> F(Distribute RFQ)
-F --> G(Supplier Portal - Token Link)
-G --> H(Submit Quote Items)
-H --> I(Quote Comparison)
-I --> J(Award Quote)
-J --> K(Generate PO)
-K --> L(PO Status Tracker)
+A[Homepage]:::high --> B(Executive Summary)
+A --> C(Problem Statement)
+A --> D(Our Solution)
+A --> E(Market & Business)
+A --> F(System & Data Design)
+A --> G(Team & Contact)
 
-%% Phase 2 / Enhancements
-B --> M(Suppliers Directory)
-B --> N(Material Catalog)
-B --> O(Company & Users - RBAC)
-B --> P(Notifications & Emails)
-B --> Q(Reports & Analytics)
-B --> R(Help Center)
-B --> S(API Docs)
+D --> D1(Centralized Management Hub)
+D --> D2(Intelligent Procurement Module)
+D --> D3(Essential Delivery Oversight)
 
-%% Priority color classes
+E --> E1(Market Analysis)
+E --> E2(Competitive Analysis)
+E --> E3(Business Model)
+E --> E4(Product Roadmap)
+
+F --> F1(Data Model & ERD)
+F --> F2(MVP vs Full Product)
+F --> F3(ETL & Database)
+
+G --> G1(Team Members)
+G --> G2(Contact / GitHub Links)
+
+%% 顏色定義（實作優先順序）
 classDef high fill:#ff9999,color:#000;
 classDef medium fill:#fff799,color:#000;
 classDef low fill:#a7c7e7,color:#000;
 
-%% High priority: MVP user flows
-class A,B,C,C1,D,E,F,G,H,I,J,K,L high;
+%% 高優先：MVP 相關頁面
+class A,D,D1,D2,D3,F,F1,F3 high;
 
-%% Medium priority: operational features
-class M,N,O,P,Q medium;
+%% 中優先：說明與商業內容
+class B,C,E,E1,E2,E3,E4,F2 medium;
 
-%% Low priority: docs & support
-class R,S low;
-```
+%% 低優先：團隊資訊與聯絡方式
+class G,G1,G2 low;
 
 ---
 
